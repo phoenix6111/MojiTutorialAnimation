@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!--顶部文字 ：scale 动画-->
+    <ImageView
+        android:id="@+id/iv2_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tutorial2_fixed"/>
+
+    <RelativeLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/iv2_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tutorial2_static"/>
+
+        <!--scale动画-->
+        <ImageView
+            android:id="@+id/iv2_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tutorial2_icon1"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv2_static"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tutorial1_text"/>
+    </RelativeLayout>
+    <!--下一页按钮跳动动画：translate,alpha动画-->
+    <ImageView
+        android:id="@+id/iv2_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tutorial_next"/>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center">
+    <!--scale动画-->
+    <ImageView
+        android:id="@+id/iv1_fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tutorial1_fixed"/>
+    <RelativeLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--时钟跳动效果，帧动画-->
+        <ImageView
+            android:id="@+id/iv1_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53.0dip"
+            android:layout_marginLeft="180dp"
+            android:background="@drawable/t1_frame_animation"/>
+
+        <!--电池转圈：rotate、scale动画-->
+        <ImageView
+            android:id="@+id/iv1_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv1_icon1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/tutorial1_icon3"/>
+
+        <ImageView
+            android:id="@+id/iv1_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tutorial1_static"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/iv1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv1_static"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tutorial1_text"/>
+
+    </RelativeLayout>
+
+    <!--下一页按钮跳动动画：translate,alpha动画-->
+    <ImageView
+        android:id="@+id/iv1_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tutorial_next"/>
+</LinearLayout>
